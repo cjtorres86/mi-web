@@ -2455,3 +2455,25 @@ html, body { overflow-x: clip; }
 
 /* Accesos a la página de trayectoria: ocultos hasta que la página exista */
 .pendiente, .nav-botones .pendiente, .solo-movil.pendiente { display: none !important; }
+
+/* =====================================================================
+   24. FONDO DE PUNTOS EN TODA LA WEB
+   ===================================================================== */
+body {
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(15, 23, 42, 0.14) 1px, transparent 1px);
+    background-size: 22px 22px;
+    background-attachment: fixed;
+}
+
+body.dark-mode {
+    background-color: #0a0a0a;
+    background-image: radial-gradient(rgba(226, 232, 240, 0.09) 1px, transparent 1px);
+}
+
+/* El hero ya no necesita su propia capa de puntos */
+.hero-fondo { background-image: none; }
+
+/* El pie de página deja ver los puntos con un velo suave */
+footer { background: rgba(255, 255, 255, 0.85); }
+body.dark-mode footer { background: rgba(10, 10, 10, 0.85); }
