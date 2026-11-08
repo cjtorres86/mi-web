@@ -1,34 +1,19 @@
-# Mi Web
+# César Torres Vidal · Portafolio
 
-Bienvenido al repositorio de mi sitio web personal. Este proyecto contiene el código fuente de mi presencia en línea, donde comparto información sobre mí, mis proyectos y formas de contacto. Esto es una prueba para github
+Sitio personal de **César Torres Vidal**, Desarrollador de Automatización y Datos para la Gestión de Personas en la Dirección de Educación Pública (MINEDUC).
 
-## Características
+**Sitio:** https://cjtorres86.github.io/mi-web/ · Versión anterior: https://cjtorres86.github.io/mi-web/anterior.html
 
-- Diseño **responsivo** adaptable a móviles, tablets y escritorio.
-- Navegación intuitiva y accesible.
-- Optimizado para velocidad y SEO básico. 
-- Código limpio y bien estructurado. 1
-- Buenas prácticas.
+## Contenido
+- Casos reales: automatización de licencias médicas (FONASA), sistema web de gestión de personas, biblioteca normativa, dashboards en Power BI.
+- Trayectoria de 20 años: de armar computadores a automatizar la gestión de personas de los SLEP de todo Chile.
+- CV en PDF descargable.
 
-## Tecnologías utilizadas
+## Tecnología
+HTML, CSS y JavaScript sin frameworks. Tipografías Anton, Inter y JetBrains Mono (Google Fonts). Modo claro y oscuro. Sonido con Web Audio API.
 
-- HTML5, CSS3, JavaScript (puro o con framework si aplica)
-- [Opcional: React, Vue, Tailwind, Bootstrap, etc.]
+## Ver en local
+Sirve la carpeta con un servidor local (por ejemplo `python -m http.server 3010`) y abre http://localhost:3010. Abriendo `index.html` directo, el navegador bloquea la carga de los sonidos.
 
-## Secciones principales
-
-- Inicio
-- Sobre mí
-- Proyectos
-- Contacto
-
-## Ver el sitio en vivo
-
-[URL de tu sitio web] actualizar 
-
-## Cómo ejecutar localmente
-
-```bash
-git clone https://github.com/cjtorres86/mi-web.git
-cd mi-web
-abre index.html en tu navegador
+## Créditos
+- Sonidos de la interfaz: notas de saxofón tenor del paquete [Tenor Sax Stacatto](https://freesound.org/people/clruwe/packs/7606/) de **clruwe** en Freesound, licencia [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Se usan las vistas previas MP3, recortadas en volumen y duración desde el código.

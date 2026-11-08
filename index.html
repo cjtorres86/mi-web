@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>César | RRHH+DA - Portafolio Datos</title>
+    <title>César Torres Vidal | RRHH + Datos + Automatización + IA</title>
+    <meta name="description" content="Desarrollador de Automatización y Datos en la Dirección de Educación Pública (MINEDUC), rumbo a Ingeniero de IA. RR.HH. + Datos + Automatización + IA.">
     <link rel="stylesheet" href="style.css">
-    <!-- Fuentes modernas -->
+    <!-- Fuentes: Inter (texto) + JetBrains Mono (detalles de código) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,600;100,700;100,800&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
     <!-- Iconos Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Iconos Devicon (lenguajes de programación) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <!-- Librería de sonido Howler.js -->
-    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
 </head>
 
 <body>
@@ -23,8 +24,8 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#inicio">
-                    RRHH<span class="logo-destacado">+[DA]</span>
+                <a href="#inicio" aria-label="Inicio">
+                    RRHH<span class="logo-da">+[DA]</span><span class="logo-ia">+[IA]</span>
                 </a>
             </div>
             <ul class="nav-links">
@@ -32,7 +33,17 @@
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li class="solo-movil pendiente"><a href="trayectoria.html">Trayectoria completa</a></li>
+                <li class="solo-movil"><a href="cv/CV_Cesar_Torres_Vidal.pdf" download>Descargar CV</a></li>
             </ul>
+            <div class="nav-botones">
+                <a href="trayectoria.html" class="nav-cta pendiente">Trayectoria completa <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="cv/CV_Cesar_Torres_Vidal.pdf" download class="nav-cv" aria-label="Descargar CV en PDF"><i class="fas fa-file-arrow-down" aria-hidden="true"></i> CV</a>
+            </div>
+            <!-- Sonido de la interfaz (se puede apagar) -->
+            <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" aria-label="Sonido de la interfaz: desactivado">
+                <i class="fas fa-volume-xmark" aria-hidden="true"></i>
+            </button>
             <!-- Switch modo oscuro/claro -->
             <div class="theme-switch-wrapper">
                 <label class="theme-switch">
@@ -50,265 +61,358 @@
     <main>
         <!-- ========== SECCIÓN HERO ========== -->
         <section id="inicio" class="hero">
+            <div class="hero-fondo" aria-hidden="true"></div>
+
             <div class="hero-foto-circular">
-                <img src="tu-foto-perfil.jpg" alt="César - Foto perfil">
+                <div class="hero-anillo" aria-hidden="true"></div>
+                <img src="tu-foto-perfil.jpg" alt="César Torres Vidal">
+                <span class="hero-estado" title="Abierto a oportunidades"><span class="punto"></span>Disponible</span>
             </div>
-            <h1>Hola, soy <span class="highlight">César</span></h1>
-            <p class="hero-tagline">Analista de RR.HH. y futuro <strong>Data Analyst & Engineer</strong></p>
-            <p class="hero-descripcion">
-                Estoy cursando mi último semestre de programación computacional y busco mi práctica en el área de Data &
-                People Analytics. Combino mi experiencia en RR.HH. con Python, SQL y Power BI para analizar datos y
-                convertirlos en decisiones.
-            </p>
+
+            <h1 id="hero-titulo" class="tipeable">Hola, soy <span class="highlight">César</span></h1>
+            <p class="hero-tagline tipeable" id="hero-tagline">Desarrollador de <strong>Automatización y Datos</strong> rumbo a <strong class="tag-ia">Ingeniero de IA</strong></p>
+
+            <p class="hero-descripcion tipeable" id="hero-descripcion">Desde la Dirección de Educación Pública del Ministerio de Educación de Chile, automatizo procesos de gestión y desarrollo de personas para los Servicios Locales de Educación Pública de todo el país, con robots de software, aplicaciones web y pipelines de datos. Mi siguiente paso: la <strong>IA aplicada a RR.HH.</strong></p>
+
+
             <div class="hero-especialidades">
-                <span class="badge"><i class="devicon-python-plain colored"></i> Python</span>
-                <span class="badge"><i class="devicon-pandas-plain colored"></i> Pandas</span>
-                <span class="badge"><i class="fas fa-file-excel"></i> openpyxl</span>
-                <span class="badge">🦄 Uvicorn</span>
-                <span class="badge"><i class="devicon-html5-plain colored"></i> HTML5</span>
-                <span class="badge"><i class="devicon-css3-plain colored"></i> CSS3</span>
-                <span class="badge"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
-                <span class="badge"><i class="fas fa-file-csv"></i> .CSV</span>
-                <span class="badge"><i class="fas fa-file-excel"></i> .XLSX</span>
-                <span class="badge"><i class="fas fa-file-alt"></i> .TXT</span>
-                <span class="badge"><i class="fas fa-database"></i> SQL</span>
-                <span class="badge"><i class="fas fa-chart-pie"></i> Power BI</span>
-                <span class="badge">📊 People Analytics</span>
-                <span class="badge"><i class="fas fa-building"></i> SAP</span>
-                <span class="badge"><i class="fas fa-calculator"></i> Softland Payroll</span>
-                <span class="badge"><i class="fas fa-users"></i> BUK</span>
-                <span class="badge"><i class="fas fa-chart-line"></i> Defontana</span>
-                <span class="badge"><i class="fas fa-clock"></i> GeoVictoria</span>
-                <span class="badge"><i class="fas fa-clock"></i> Kronos Work</span>
+                <div class="badge-grupo">
+                    <span class="badge-titulo">IA y automatización</span>
+                    <span class="badge"><i class="fas fa-robot ic-rpa"></i> RPA asistido</span>
+                    <span class="badge"><i class="fas fa-plug ic-api"></i> APIs y servicios web</span>
+                    <span class="badge"><i class="fas fa-wand-magic-sparkles ic-ia"></i> Claude</span>
+                    <span class="badge"><i class="fas fa-code ic-ia"></i> GitHub Copilot</span>
+                    <span class="badge"><i class="fas fa-terminal ic-ia"></i> Cursor</span>
+                    <span class="badge"><i class="fas fa-microchip ic-local"></i> IA local · Ollama</span>
+                </div>
+                <div class="badge-grupo">
+                    <span class="badge-titulo">Datos y desarrollo</span>
+                    <span class="badge"><i class="devicon-python-plain colored"></i> Python</span>
+                    <span class="badge"><i class="devicon-pandas-plain colored"></i> Pandas</span>
+                    <span class="badge"><i class="devicon-microsoftsqlserver-plain colored"></i> SQL Server</span>
+                    <span class="badge"><i class="devicon-mysql-original colored"></i> MySQL</span>
+                    <span class="badge"><i class="fas fa-chart-pie ic-pbi"></i> Power BI</span>
+                    <span class="badge"><i class="devicon-angularjs-plain colored"></i> Angular</span>
+                    <span class="badge"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                    <span class="badge"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+                    <span class="badge"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                    <span class="badge"><i class="devicon-git-plain colored"></i> Git</span>
+                </div>
+                <div class="badge-grupo">
+                    <span class="badge-titulo">Sistemas de RR.HH.</span>
+                    <span class="badge"><i class="fas fa-users ic-hr"></i> BUK</span>
+                    <span class="badge"><i class="fas fa-clock ic-time"></i> GeoVictoria</span>
+                    <span class="badge"><i class="fas fa-clock ic-time"></i> Kronos</span>
+                    <span class="badge"><i class="fas fa-calculator ic-pay"></i> Payroll</span>
+                    <span class="badge"><i class="fas fa-notes-medical ic-salud"></i> PIEE · FONASA</span>
+                    <span class="badge"><i class="fas fa-building ic-sap"></i> SAP</span>
+                </div>
             </div>
+
+            <a href="#experiencia" class="hero-siguiente" aria-label="Ir a experiencia laboral">
+                <span class="tecla" aria-hidden="true"><i class="fas fa-arrow-down"></i></span>
+                <span class="hero-siguiente-texto">Usa la flecha ↓ para avanzar</span>
+            </a>
         </section>
 
         <!-- ========== SECCIÓN EXPERIENCIA ========== -->
         <section id="experiencia" class="experiencia">
             <div class="seccion-header">
+                <span class="seccion-kicker">// trayectoria</span>
                 <h2>Mi Experiencia Laboral</h2>
-                <p class="seccion-subtitulo">De RR.HH. a Datos - Trayectoria que me acerca al análisis</p>
+                <p class="seccion-subtitulo">De operario a automatización: 20 años, 5 organizaciones y una sola dirección.</p>
             </div>
 
             <div class="acordeon">
-                <!-- Item 1 - Coordinador de RRHH -->
-                <div class="acordeon-item">
-                    <div class="acordeon-header">
-                        <div class="acordeon-info">
-                            <span class="acordeon-fecha">2026 - Actualidad</span>
-                            <h3>Coordinador de RR.HH.</h3>
-                            <span class="acordeon-empresa">Empresa Chilena | Santiago</span>
-                        </div>
-                        <div class="acordeon-icono">
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </div>
+
+                <!-- MINEDUC -->
+                <div class="acordeon-item etapa-4">
+                    <button class="acordeon-header" type="button" aria-expanded="false">
+                        <span class="acordeon-anios actual" aria-label="2026 a Hoy"><span class="anio-fin">Hoy</span><span class="anio-ini">2026</span></span>
+                        <span class="acordeon-info">
+                            <span class="acordeon-top"><span class="etapa-chip">Datos y automatización</span></span>
+                            <span class="acordeon-titulo">MINEDUC · Dirección de Educación Pública</span>
+                            <span class="acordeon-empresa">Desarrollador de Automatización y Datos · Sector público · Remoto</span>
+                        </span>
+                        <span class="acordeon-icono"><i class="fas fa-chevron-down"></i></span>
+                    </button>
                     <div class="acordeon-contenido">
                         <div class="acordeon-texto">
-                            <p><strong>🎯 Contexto del rol:</strong> Lideré la coordinación del área de gestión de
-                                personas en una empresa de servicios con más de 200 colaboradores.</p>
-                            <p><strong>📊 Funciones clave orientadas a datos:</strong></p>
-                            <ul>
-                                <li>Implementé un sistema de seguimiento de indicadores de ausentismo, reduciendo el
-                                    tiempo de reporte en un 60%.</li>
-                                <li>Automaticé informes mensuales de rotación y antigüedad usando Excel avanzado.</li>
-                                <li>Participé en la migración de datos de RR.HH. desde planillas Excel a un sistema
-                                    interno.</li>
-                                <li>Diseñé dashboards básicos para visualizar headcount y distribución por área/género.
-                                </li>
-                            </ul>
-                            <p><strong>🔧 Herramientas:</strong> Excel avanzado, Power Query, métricas de RR.HH.</p>
-                            <p><strong>💡 Aprendizaje para Datos:</strong> Limpieza de datos, reportes automáticos y
-                                KPIs.</p>
+                            <div class="cargo">
+                                <div class="cargo-head"><h3>Desarrollador de Automatización y Datos para la Gestión y Desarrollo de Personas</h3><span class="cargo-fecha">2026 – hoy</span></div>
+                                <p class="cargo-contexto">Departamento de Gestión y Desarrollo de las Personas, al servicio de los Servicios Locales de Educación Pública (SLEP) de todo Chile.</p>
+                                <ul>
+                                    <li><b>Robot de software</b> que automatiza de punta a punta la tramitación de licencias médicas en el portal PIEE de FONASA, combinando APIs y servicios web, siempre dentro de lo que permite el marco legal.</li>
+                                    <li><b>Sistema web de gestión de personas:</b> de aplicación de escritorio a sistema web institucional, desde el levantamiento de requerimientos hasta la implementación.</li>
+                                    <li><b>Pipelines ETL</b> que consolidan datos de personas de múltiples sistemas a nivel nacional.</li>
+                                    <li><b>Dashboards en Power BI</b> que reemplazan reportes manuales en Excel.</li>
+                                    <li><b>Biblioteca normativa</b> de licencias médicas: 100 normas con búsqueda y filtros.</li>
+                                </ul>
+                                <div class="cargo-stack"><span>Python</span><span>SQL Server</span><span>MySQL</span><span>Angular</span><span>Node.js</span><span>APIs</span><span>RPA</span><span>Power BI</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Item 2 - Analista de Remuneraciones -->
-                <div class="acordeon-item">
-                    <div class="acordeon-header">
-                        <div class="acordeon-info">
-                            <span class="acordeon-fecha">2019 - 2025</span>
-                            <h3>Analista de Remuneraciones</h3>
-                            <span class="acordeon-empresa">Empresa Retail | Santiago</span>
-                        </div>
-                        <div class="acordeon-icono">
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </div>
+                <!-- LA POLAR -->
+                <div class="acordeon-item etapa-3">
+                    <button class="acordeon-header" type="button" aria-expanded="false">
+                        <span class="acordeon-anios" aria-label="2020 a 2025"><span class="anio-fin">2025</span><span class="anio-ini">2020</span></span>
+                        <span class="acordeon-info">
+                            <span class="acordeon-top"><span class="etapa-chip">Gestión y especialización</span></span>
+                            <span class="acordeon-titulo">Empresas La Polar</span>
+                            <span class="acordeon-empresa">Coordinador de RR.HH. → Analista de Datos · Retail nacional · 3 cargos</span>
+                        </span>
+                        <span class="acordeon-icono"><i class="fas fa-chevron-down"></i></span>
+                    </button>
                     <div class="acordeon-contenido">
                         <div class="acordeon-texto">
-                            <p><strong>🎯 Contexto del rol:</strong> Gestioné el proceso de remuneraciones para más de
-                                500 colaboradores.</p>
-                            <p><strong>📊 Funciones clave orientadas a datos:</strong></p>
-                            <ul>
-                                <li>Procesé nóminas mensuales con Excel, validando más de 50 variables por colaborador.
-                                </li>
-                                <li>Identifiqué patrones de error recurrente, reduciendo reclamos en un 40%.</li>
-                                <li>Generé reportes de costo laboral por centro de costo para gerencia.</li>
-                                <li>Colaboré en migración y validación de datos históricos.</li>
-                            </ul>
-                            <p><strong>🔧 Herramientas:</strong> Excel avanzado, validación de datos, lógica
-                                condicional.</p>
-                            <p><strong>💡 Aprendizaje para Datos:</strong> Limpieza de datos, validación de integridad y
-                                calidad del dato.</p>
+                            <div class="cargo">
+                                <div class="cargo-head"><h3>Analista de Datos para RR.HH.</h3><span class="cargo-fecha">2024 – 2025</span></div>
+                                <ul>
+                                    <li>Integré los datos de BUK, GeoVictoria y remuneraciones en dashboards de dotación, asistencia, ausentismo y rotación.</li>
+                                    <li>Procesos ETL de limpieza, validación y transformación para reportería ejecutiva, y automatización de reportes con Power Query.</li>
+                                </ul>
+                                <div class="cargo-stack"><span>Power BI</span><span>Power Query</span><span>SQL</span><span>BUK</span><span>GeoVictoria</span></div>
+                            </div>
+                            <div class="cargo">
+                                <div class="cargo-head"><h3>Analista de Compensaciones y Datos</h3><span class="cargo-fecha">2022 – 2023</span></div>
+                                <ul>
+                                    <li><b>Me invitaron al equipo</b> las jefaturas de Compensaciones y Análisis de Datos, después de ver el dashboard que construí como coordinador.</li>
+                                    <li>Potencié ese dashboard en Power BI hasta convertirlo en una herramienta para el área central, y analicé remuneraciones y costo laboral con datos de nómina.</li>
+                                </ul>
+                                <div class="cargo-stack"><span>Power BI</span><span>Excel avanzado</span><span>SQL</span></div>
+                            </div>
+                            <div class="cargo">
+                                <div class="cargo-head"><h3>Coordinador de RR.HH.</h3><span class="cargo-fecha">2020 – 2021</span></div>
+                                <ul>
+                                    <li>Coordinación integral de RR.HH. en tienda: atendí a todos los trabajadores en todas las dimensiones de la gestión de personas.</li>
+                                    <li>Diseñé en Power BI el dashboard de dotación y asistencia que la tienda nunca había tenido, y lo repliqué en otras sucursales al asumir su coordinación.</li>
+                                </ul>
+                                <div class="cargo-stack"><span>BUK</span><span>GeoVictoria</span><span>Power BI</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Item 3 - Administrativo de Reclutamiento -->
-                <div class="acordeon-item">
-                    <div class="acordeon-header">
-                        <div class="acordeon-info">
-                            <span class="acordeon-fecha">2009 - 2018</span>
-                            <h3>Administrativo de Reclutamiento y Selección</h3>
-                            <span class="acordeon-empresa">Consultora RR.HH. | Santiago</span>
-                        </div>
-                        <div class="acordeon-icono">
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </div>
+                <!-- HITES -->
+                <div class="acordeon-item etapa-2">
+                    <button class="acordeon-header" type="button" aria-expanded="false">
+                        <span class="acordeon-anios" aria-label="2014 a 2019"><span class="anio-fin">2019</span><span class="anio-ini">2014</span></span>
+                        <span class="acordeon-info">
+                            <span class="acordeon-top"><span class="etapa-chip">Administrativa</span></span>
+                            <span class="acordeon-titulo">Hites</span>
+                            <span class="acordeon-empresa">Reclutamiento → Remuneraciones · Retail nacional · 3 cargos</span>
+                        </span>
+                        <span class="acordeon-icono"><i class="fas fa-chevron-down"></i></span>
+                    </button>
                     <div class="acordeon-contenido">
                         <div class="acordeon-texto">
-                            <p><strong>🎯 Contexto del rol:</strong> Apoyé procesos de reclutamiento para empresas de
-                                diversos rubros.</p>
-                            <p><strong>📊 Funciones clave orientadas a datos:</strong></p>
-                            <ul>
-                                <li>Administré bases de datos de postulantes (más de 2,000 registros anuales).</li>
-                                <li>Creé reportes de tiempo de cobertura de vacantes (time-to-hire).</li>
-                                <li>Identifiqué canales de reclutamiento con menor retención.</li>
-                                <li>Mantuve registro histórico de candidatos seleccionados.</li>
-                            </ul>
-                            <p><strong>🔧 Herramientas:</strong> Excel, gestión de bases de datos, indicadores básicos.
-                            </p>
-                            <p><strong>💡 Aprendizaje para Datos:</strong> Mi primer contacto con datos de personas.
-                                Organización y limpieza de bases de datos.</p>
+                            <div class="cargo">
+                                <div class="cargo-head"><h3>Administrativo de Remuneraciones</h3><span class="cargo-fecha">2018 – 2019</span></div>
+                                <ul>
+                                    <li>Proceso de nómina mensual con Payroll y control de asistencia con Kronos.</li>
+                                    <li><b>Mi primera automatización:</b> una calculadora de finiquitos en Excel que convirtió un cálculo manual en una estimación inmediata para gerencia.</li>
+                                </ul>
+                                <div class="cargo-stack"><span>Payroll</span><span>Kronos</span><span>Excel avanzado</span></div>
+                            </div>
+                            <div class="cargo">
+                                <div class="cargo-head"><h3>Administrativo de Personas</h3><span class="cargo-fecha">2016 – 2017</span></div>
+                                <ul>
+                                    <li>Contratos, anexos, licencias médicas y apoyo en remuneraciones y finiquitos.</li>
+                                    <li>Validación de datos de colaboradores y digitalización de archivos.</li>
+                                </ul>
+                            </div>
+                            <div class="cargo">
+                                <div class="cargo-head"><h3>Asistente de Reclutamiento y Selección</h3><span class="cargo-fecha">2014 – 2015</span></div>
+                                <ul>
+                                    <li>Selección masiva para tiendas y gestión de bases de datos de candidatos.</li>
+                                    <li>Mis primeros indicadores: tiempo de contratación y cobertura de vacantes.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Item 4 - Asistente de Personal -->
-                <div class="acordeon-item">
-                    <div class="acordeon-header">
-                        <div class="acordeon-info">
-                            <span class="acordeon-fecha">2005 - 2008</span>
-                            <h3>Asistente de Personal</h3>
-                            <span class="acordeon-empresa">Olidata Chile | Santiago</span>
-                        </div>
-                        <div class="acordeon-icono">
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </div>
+                <!-- IBEROAMERICANA RADIO -->
+                <div class="acordeon-item etapa-1">
+                    <button class="acordeon-header" type="button" aria-expanded="false">
+                        <span class="acordeon-anios" aria-label="2010 a 2013"><span class="anio-fin">2013</span><span class="anio-ini">2010</span></span>
+                        <span class="acordeon-info">
+                            <span class="acordeon-top"><span class="etapa-chip">Técnica → Administrativa</span></span>
+                            <span class="acordeon-titulo">Iberoamericana Radio Chile · Punta Arenas</span>
+                            <span class="acordeon-empresa">Asistente de Audio → Asistente de RR.HH. · Medios · 2 cargos</span>
+                        </span>
+                        <span class="acordeon-icono"><i class="fas fa-chevron-down"></i></span>
+                    </button>
                     <div class="acordeon-contenido">
                         <div class="acordeon-texto">
-                            <p><strong>🎯 Contexto del rol:</strong> Mi primer contacto formal con el mundo de RR.HH. en
-                                una empresa de tecnología.</p>
-                            <p><strong>📊 Funciones clave orientadas a datos:</strong></p>
-                            <ul>
-                                <li>Administré y mantuve actualizada la base de datos de empleados.</li>
-                                <li>Generé reportes básicos de asistencia y ausentismo.</li>
-                                <li>Participé en el proceso de fichaje de personal nuevo.</li>
-                                <li>Organicé archivos históricos de personal.</li>
-                            </ul>
-                            <p><strong>🔧 Herramientas:</strong> Excel básico, manejo de bases de datos.</p>
-                            <p><strong>💡 Aprendizaje para Datos:</strong> La importancia de tener datos limpios y
-                                organizados.</p>
+                            <div class="cargo">
+                                <div class="cargo-head"><h3>Asistente de RR.HH.</h3><span class="cargo-fecha">2012 – 2013</span></div>
+                                <ul>
+                                    <li>Apoyo a RR.HH. central para el personal técnico de audio y operaciones de la zona austral.</li>
+                                    <li><b>Mi ventaja:</b> venía del área técnica, así que podía traducir la realidad de esos equipos (turnos, eventos, necesidades) para RR.HH. central.</li>
+                                </ul>
+                            </div>
+                            <div class="cargo">
+                                <div class="cargo-head"><h3>Asistente de Audio</h3><span class="cargo-fecha">2010 – 2011</span></div>
+                                <ul>
+                                    <li>Operación de audio en estudio y en eventos musicales, producciones de sonido y medios audiovisuales.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- OLIDATA -->
+                <div class="acordeon-item etapa-1">
+                    <button class="acordeon-header" type="button" aria-expanded="false">
+                        <span class="acordeon-anios" aria-label="2006 a 2009"><span class="anio-fin">2009</span><span class="anio-ini">2006</span></span>
+                        <span class="acordeon-info">
+                            <span class="acordeon-top"><span class="etapa-chip">Operativa y técnica</span></span>
+                            <span class="acordeon-titulo">Computación Olidata</span>
+                            <span class="acordeon-empresa">Bodega → Ensamblaje de hardware · Tecnología · 2 cargos</span>
+                        </span>
+                        <span class="acordeon-icono"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="acordeon-contenido">
+                        <div class="acordeon-texto">
+                            <div class="cargo">
+                                <div class="cargo-head"><h3>Operario Ensamblador de Hardware</h3><span class="cargo-fecha">2008 – 2009</span></div>
+                                <ul><li>Armado, configuración y pruebas de computadores. Aquí empecé a construir tecnología con las manos.</li></ul>
+                            </div>
+                            <div class="cargo">
+                                <div class="cargo-head"><h3>Operario de Bodega Electrónica</h3><span class="cargo-fecha">2006 – 2007</span></div>
+                                <ul><li>Recepción, almacenamiento e inventario de componentes computacionales.</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <!-- ========== SECCIÓN PROYECTOS ========== -->
         <section id="proyectos" class="proyectos">
             <div class="seccion-header">
+                <span class="seccion-kicker">// proyectos</span>
                 <h2>Mis Proyectos</h2>
-                <p class="seccion-subtitulo">Trabajos prácticos en análisis de datos y People Analytics</p>
+                <p class="seccion-subtitulo">Tres automatizaciones reales, de Excel a robots de software.</p>
             </div>
 
-            <div class="carrusel-container">
-                <button class="carrusel-btn prev" id="prevBtn">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="carrusel-wrapper">
-                    <div class="carrusel-track" id="carruselTrack">
-                        <!-- Proyecto 1 -->
-                        <div class="proyecto-card">
-                            <div class="proyecto-icono"><i class="fab fa-python"></i></div>
-                            <h3>Análisis de Rotación Laboral</h3>
-                            <p>Limpieza y análisis exploratorio con pandas. Visualización de patrones de renuncia por
-                                área.</p>
-                            <div class="tech-tags"><span>Python</span><span>Pandas</span><span>Seaborn</span></div>
-                            <div class="proyecto-links"><a href="#" class="btn-proyecto">Ver en GitHub →</a></div>
-                        </div>
+            <div class="ruleta" id="ruleta" aria-roledescription="carrusel" aria-label="Proyectos destacados">
+                <button class="ruleta-btn prev" id="ruletaPrev" type="button" aria-label="Proyecto anterior"><i class="fas fa-chevron-left"></i></button>
 
-                        <!-- Proyecto 2 (CENTRO - será el más grande) -->
-                        <div class="proyecto-card proyecto-centro">
-                            <div class="proyecto-icono"><i class="fas fa-chart-simple"></i></div>
-                            <h3>Dashboard RR.HH. Power BI</h3>
-                            <p>Dashboard interactivo con KPIs: headcount, ausentismo, género, antigüedad. Datos
-                                simulados de empresa chilena.</p>
-                            <div class="tech-tags"><span>Power BI</span><span>DAX</span><span>SQL</span></div>
-                            <div class="proyecto-links"><a href="#" class="btn-proyecto">Ver demo →</a></div>
-                        </div>
+                <div class="ruleta-escena" id="ruletaEscena">
 
-                        <!-- Proyecto 3 -->
-                        <div class="proyecto-card">
-                            <div class="proyecto-icono"><i class="fas fa-database"></i></div>
-                            <h3>ETL con Python y SQLite</h3>
-                            <p>Extracción desde Excel, transformación y carga en BD. Consultas analíticas para
-                                reclutamiento.</p>
-                            <div class="tech-tags"><span>Python</span><span>SQLite</span><span>Pandas</span></div>
-                            <div class="proyecto-links"><a href="#" class="btn-proyecto">Ver en GitHub →</a></div>
+                    <article class="proy" data-i="0" aria-roledescription="diapositiva" aria-label="1 de 3">
+                        <div class="proy-top">
+                            <span class="proy-icono g-ia"><i class="fas fa-robot"></i></span>
+                            <div class="proy-meta"><span>MINEDUC · Dirección de Educación Pública</span><span>2026</span></div>
+                            <span class="proy-num">01/03</span>
                         </div>
-                    </div>
+                        <h3>Robot de licencias médicas para los SLEP</h3>
+                        <p class="proy-desc">Automaticé la tramitación de licencias médicas de los Servicios Locales de Educación Pública de todo Chile con un robot de software que combina APIs y servicios web, operando según el marco legal vigente.</p>
+                        <div class="flujo" aria-label="Flujo del proyecto">
+                            <span>Licencias SLEP</span><i></i><span>API · Web service</span><i></i><span class="destacado">Robot RPA</span><i></i><span>Portal PIEE · FONASA</span>
+                        </div>
+                        <div class="proy-pie">
+                            <div class="proy-stack"><span>RPA</span><span>APIs</span><span>Web services</span><span>Python</span></div>
+                            <span class="proy-sello"><i class="fas fa-scale-balanced"></i> Marco legal vigente</span>
+                        </div>
+                    </article>
+
+                    <article class="proy" data-i="1" aria-roledescription="diapositiva" aria-label="2 de 3">
+                        <div class="proy-top">
+                            <span class="proy-icono g-azul"><i class="fas fa-chart-pie"></i></span>
+                            <div class="proy-meta"><span>Empresas La Polar</span><span>2020 – 2021</span></div>
+                            <span class="proy-num">02/03</span>
+                        </div>
+                        <h3>Dashboard de gestión de tienda</h3>
+                        <p class="proy-desc">Reuní los KPIs clave de RR.HH. con los datos que yo trabajaba. El gerente de tienda lo pidió para él, y juntos lo potenciamos hasta convertirlo en el instrumento de gestión de los jefes de sala.</p>
+                        <div class="flujo" aria-label="Flujo del proyecto">
+                            <span>BUK · GeoVictoria · Excel</span><i></i><span>Power Query</span><i></i><span class="destacado">Power BI</span><i></i><span>Gerencia y jefes de sala</span>
+                        </div>
+                        <div class="proy-pie">
+                            <div class="proy-stack"><span>Power BI</span><span>Power Query</span><span>Excel</span><span>BUK</span></div>
+                            <span class="proy-sello"><i class="fas fa-store"></i> Replicado en sucursales</span>
+                        </div>
+                    </article>
+
+                    <article class="proy" data-i="2" aria-roledescription="diapositiva" aria-label="3 de 3">
+                        <div class="proy-top">
+                            <span class="proy-icono g-cian"><i class="fas fa-calculator"></i></span>
+                            <div class="proy-meta"><span>Hites</span><span>2018 – 2019</span></div>
+                            <span class="proy-num">03/03</span>
+                        </div>
+                        <h3>Calculadora de finiquitos</h3>
+                        <p class="proy-desc">Llevé los datos del ERP a Excel y programé macros en Visual Basic para calcular finiquitos con todas las variables de la empresa en ese momento. Mi primera automatización.</p>
+                        <div class="flujo" aria-label="Flujo del proyecto">
+                            <span>ERP Payroll</span><i></i><span>Excel</span><i></i><span class="destacado">Macros VBA</span><i></i><span>Finiquito al instante</span>
+                        </div>
+                        <div class="proy-pie">
+                            <div class="proy-stack"><span>Excel</span><span>VBA</span><span>Payroll</span></div>
+                            <span class="proy-sello"><i class="fas fa-bolt"></i> De manual a instantáneo</span>
+                        </div>
+                    </article>
+
                 </div>
-                <button class="carrusel-btn next" id="nextBtn">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+
+                <button class="ruleta-btn next" id="ruletaNext" type="button" aria-label="Proyecto siguiente"><i class="fas fa-chevron-right"></i></button>
             </div>
-            <div class="carrusel-indicadores" id="indicadores"></div>
+
+            <div class="ruleta-puntos" id="ruletaPuntos" role="tablist" aria-label="Elegir proyecto">
+                <button type="button" role="tab" data-ir="0"><span>Robot de licencias</span></button>
+                <button type="button" role="tab" data-ir="1"><span>Dashboard de tienda</span></button>
+                <button type="button" role="tab" data-ir="2"><span>Finiquitos</span></button>
+            </div>
+
+            <p class="ahora">
+                <span class="ahora-punto" aria-hidden="true"></span>
+                <span class="ahora-label">Ahora trabajando en</span>
+                <span class="ahora-texto">Integración de IA local en Gestión y Desarrollo de Personas · Nuevas automatizaciones para los SLEP</span>
+            </p>
         </section>
 
         <!-- ========== SECCIÓN CONTACTO ========== -->
-        <section id="contacto" class="contacto">
+        <section id="contacto" class="contacto contacto-min">
             <div class="seccion-header">
+                <span class="seccion-kicker">// contacto</span>
                 <h2>¿Hablamos?</h2>
-                <p class="seccion-subtitulo">Conectemos para oportunidades laborales o colaboraciones</p>
-            </div>
-            <div class="contacto-content">
-                <p>📍 Santiago, Chile 🇨🇱 | Buscando oportunidades en <strong>Analítica de Datos · People Analytics ·
-                        Ingeniería de Datos</strong></p>
-                <div class="contacto-links">
-                    <a href="mailto:cjtorres1986@gmail.com" class="contact-item"><i class="fas fa-envelope"></i>
-                        cjtorres1986@gmail.com</a>
-                    <a href="https://linkedin.com/in/cesartorresvidal/" target="_blank" class="contact-item"><i
-                            class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com/cjtorres86" target="_blank" class="contact-item"><i
-                            class="fab fa-github"></i> GitHub</a>
-                </div>
+                <p class="seccion-subtitulo">Automatización, datos e IA aplicada · Santiago, Chile · Remoto, híbrido o presencial</p>
             </div>
 
-            <!-- Botón de descarga de CV - FUERA del rectángulo -->
-            <div class="cv-download">
-                <a href="cv/cv_cesartorres.pdf" download="CV_Cesar_Data_Analytics.pdf" class="btn-cv">
-                    <i class="fas fa-file-pdf"></i> Descargar CV
-                    <i class="fas fa-download"></i>
-                </a>
-            </div>
+            <!-- Correo protagonista: clic para copiar -->
+            <button class="correo-grande" type="button" data-copy="cjtorres1986@gmail.com" aria-label="Copiar correo cjtorres1986@gmail.com">
+                <span class="correo-texto">cjtorres1986@gmail.com</span>
+                <span class="canal-accion" aria-live="polite"><i class="far fa-copy"></i> Copiar</span>
+            </button>
+
+            <!-- Redes en una sola línea -->
+            <nav class="redes" aria-label="Redes y contacto">
+                <a href="https://www.linkedin.com/in/cesartorresvidal/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <a href="https://github.com/cjtorres86" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://wa.me/56966122186?text=Hola%20C%C3%A9sar%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> +56 9 6612 2186</a>
+                <a href="mailto:cjtorres1986@gmail.com"><i class="far fa-envelope"></i> Escribir correo</a>
+            </nav>
+
+            <div class="contacto-cta">
+                <a href="cv/CV_Cesar_Torres_Vidal.pdf" download class="btn-cv-nuevo"><i class="fas fa-file-arrow-down"></i> Descargar CV</a>
+                <a href="trayectoria.html" class="btn-linea pendiente">Trayectoria completa <i class="fas fa-arrow-right"></i></a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 César · De RR.HH. a Ciencia de Datos con ☕ y 🐼</p>
+        <p><span class="footer-logo">RRHH<span class="logo-da">+[DA]</span><span class="logo-ia">+[IA]</span></span> · © 2026 César Torres Vidal · Diseñado y desarrollado con ☕, 🐼 e IA</p>
+        <p class="creditos">Sonidos: saxofón tenor de <a href="https://freesound.org/people/clruwe/packs/7606/" target="_blank" rel="noopener">clruwe</a> en Freesound · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></p>
     </footer>
 
     <script src="script.js"></script>
 
     <!-- Botón flotante de WhatsApp -->
-    <a href="https://wa.me/56912345678?text=Hola%20César,%20vi%20tu%20portafolio%20de%20datos%20y%20me%20interesa%20contactarte"
-        class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/56966122186?text=Hola%20C%C3%A9sar%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar"
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 </body>
