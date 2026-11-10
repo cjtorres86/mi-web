@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,600;100,700;100,800&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,600;100,700;100,800&family=Montserrat:wght@700;800&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
     <!-- Iconos Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -66,46 +66,38 @@
             <div class="hero-foto-circular">
                 <div class="hero-anillo" aria-hidden="true"></div>
                 <img src="tu-foto-perfil.jpg" alt="César Torres Vidal">
-                <span class="hero-estado" title="Abierto a oportunidades"><span class="punto"></span>Disponible</span>
             </div>
 
-            <h1 id="hero-titulo" class="tipeable">Hola, soy <span class="highlight">César</span></h1>
+            <h1 id="hero-titulo" class="aparece">Hola, soy <span class="highlight">César</span></h1>
             <p class="hero-tagline tipeable" id="hero-tagline">Desarrollador de <strong>Automatización y Datos</strong> rumbo a <strong class="tag-ia">Ingeniero de IA</strong></p>
 
-            <p class="hero-descripcion tipeable" id="hero-descripcion">Desde la Dirección de Educación Pública del Ministerio de Educación de Chile, automatizo procesos de gestión y desarrollo de personas para los Servicios Locales de Educación Pública de todo el país, con robots de software, aplicaciones web y pipelines de datos. Mi siguiente paso: la <strong>IA aplicada a RR.HH.</strong></p>
+            <p class="hero-descripcion aparece aparece-tarde" id="hero-descripcion">Desde la Dirección de Educación Pública del Ministerio de Educación de Chile, automatizo procesos de gestión y desarrollo de personas para los Servicios Locales de Educación Pública de todo el país, con robots de software, aplicaciones web y pipelines de datos. Mi siguiente paso: la <strong>IA aplicada a RR.HH.</strong></p>
 
 
-            <div class="hero-especialidades">
-                <div class="badge-grupo">
-                    <span class="badge-titulo">IA y automatización</span>
-                    <span class="badge"><i class="fas fa-robot ic-rpa"></i> RPA asistido</span>
-                    <span class="badge"><i class="fas fa-plug ic-api"></i> APIs y servicios web</span>
-                    <span class="badge"><i class="fas fa-wand-magic-sparkles ic-ia"></i> Claude</span>
-                    <span class="badge"><i class="fas fa-code ic-ia"></i> GitHub Copilot</span>
-                    <span class="badge"><i class="fas fa-terminal ic-ia"></i> Cursor</span>
-                    <span class="badge"><i class="fas fa-microchip ic-local"></i> IA local · Ollama</span>
+            <div class="hero-especialidades cintas">
+                <div class="badge-grupo fila-fs">
+                    <button type="button" class="badge-titulo" data-titulo="Full Stack + Diseño" data-divs="diseno:Diseño|frontend:Frontend|backend:Backend|bd:Base de datos|datos:Datos|auto:Automatización|ia:IA|herr:Herramientas" aria-live="polite" title="Clic para ver por categoría">Full Stack + Diseño</button>
+                    <div class="cinta">
+                        <div class="pista">
+                            <div class="serie"><span class="badge" data-div="diseno" data-exp="avanzada"><i class="devicon-photoshop-plain colored"></i> Photoshop</span> <span class="badge" data-div="diseno" data-exp="avanzada"><i class="fas fa-camera-retro ic-lightroom"></i> Lightroom</span> <span class="badge" data-div="diseno" data-exp="avanzada"><i class="devicon-figma-plain colored"></i> Figma</span> <span class="badge" data-div="frontend" data-exp="avanzada"><i class="devicon-html5-plain colored"></i> HTML · CSS</span> <span class="badge" data-div="frontend" data-exp="avanzada"><i class="devicon-angularjs-plain colored"></i> Angular</span> <span class="badge" data-div="frontend" data-exp="avanzada"><i class="devicon-typescript-plain colored"></i> TypeScript</span> <span class="badge" data-div="frontend" data-exp="avanzada"><i class="devicon-javascript-plain colored"></i> JavaScript</span> <span class="badge" data-div="backend" data-exp="avanzada"><i class="devicon-nodejs-plain colored"></i> Node.js</span> <span class="badge" data-div="backend" data-exp="avanzada"><i class="devicon-python-plain colored"></i> Python</span> <span class="badge" data-div="backend" data-exp="media"><i class="fas fa-plug ic-api"></i> APIs y servicios web</span> <span class="badge" data-div="bd" data-exp="avanzada"><i class="devicon-microsoftsqlserver-plain colored"></i> SQL Server</span> <span class="badge" data-div="bd" data-exp="avanzada"><i class="devicon-mysql-original colored"></i> MySQL</span> <span class="badge" data-div="datos" data-exp="avanzada"><i class="devicon-pandas-plain colored"></i> Pandas</span> <span class="badge" data-div="datos" data-exp="avanzada"><i class="fas fa-chart-pie ic-pbi"></i> Power BI</span> <span class="badge" data-div="auto" data-exp="media"><i class="fas fa-robot ic-rpa"></i> RPA asistido</span> <span class="badge" data-div="auto" data-exp="avanzada"><i class="fas fa-bolt ic-automate"></i> Power Automate</span> <span class="badge" data-div="auto" data-exp="avanzada"><i class="fas fa-code ic-vba"></i> VBA · Macros</span> <span class="badge" data-div="ia" data-exp="media"><i class="fas fa-wand-magic-sparkles ic-ia"></i> Claude</span> <span class="badge" data-div="ia" data-exp="media"><i class="fas fa-code ic-ia"></i> GitHub Copilot</span> <span class="badge" data-div="ia" data-exp="media"><i class="fas fa-terminal ic-ia"></i> Cursor</span> <span class="badge" data-div="ia" data-exp="media"><i class="fas fa-microchip ic-local"></i> IA local · Ollama</span> <span class="badge" data-div="herr" data-exp="avanzada"><i class="devicon-git-plain colored"></i> Git</span></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="badge-grupo">
-                    <span class="badge-titulo">Datos y desarrollo</span>
-                    <span class="badge"><i class="devicon-python-plain colored"></i> Python</span>
-                    <span class="badge"><i class="devicon-pandas-plain colored"></i> Pandas</span>
-                    <span class="badge"><i class="devicon-microsoftsqlserver-plain colored"></i> SQL Server</span>
-                    <span class="badge"><i class="devicon-mysql-original colored"></i> MySQL</span>
-                    <span class="badge"><i class="fas fa-chart-pie ic-pbi"></i> Power BI</span>
-                    <span class="badge"><i class="devicon-angularjs-plain colored"></i> Angular</span>
-                    <span class="badge"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
-                    <span class="badge"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
-                    <span class="badge"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
-                    <span class="badge"><i class="devicon-git-plain colored"></i> Git</span>
+                <div class="badge-grupo fila-rh">
+                    <button type="button" class="badge-titulo" data-titulo="RR.HH. + Ofimática" data-divs="rrhh:RR.HH.|ofi:Ofimática" aria-live="polite" title="Clic para ver por categoría">RR.HH. + Ofimática</button>
+                    <div class="cinta">
+                        <div class="pista">
+                            <div class="serie"><span class="badge" data-div="rrhh" data-exp="alta"><i class="fas fa-users ic-hr"></i> BUK</span> <span class="badge" data-div="rrhh" data-exp="alta"><i class="fas fa-clock ic-time"></i> GeoVictoria</span> <span class="badge" data-div="rrhh" data-exp="alta"><i class="fas fa-clock ic-time"></i> Kronos</span> <span class="badge" data-div="rrhh" data-exp="alta"><i class="fas fa-calculator ic-pay"></i> Payroll</span> <span class="badge" data-div="rrhh" data-exp="alta"><i class="fas fa-notes-medical ic-salud"></i> PIEE · FONASA</span> <span class="badge" data-div="rrhh" data-exp="alta"><i class="fas fa-building ic-sap"></i> SAP</span> <span class="badge" data-div="ofi" data-exp="avanzada"><i class="fas fa-file-excel ic-excel"></i> Excel avanzado</span> <span class="badge" data-div="ofi" data-exp="avanzada"><i class="fas fa-file-word ic-word"></i> Word</span> <span class="badge" data-div="ofi" data-exp="avanzada"><i class="fas fa-file-powerpoint ic-ppt"></i> PowerPoint</span> <span class="badge" data-div="ofi" data-exp="avanzada"><i class="fas fa-envelope ic-outlook"></i> Outlook</span> <span class="badge" data-div="ofi" data-exp="avanzada"><i class="fas fa-users-rectangle ic-teams"></i> Teams</span> <span class="badge" data-div="ofi" data-exp="avanzada"><i class="fas fa-share-nodes ic-sharepoint"></i> SharePoint</span></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="badge-grupo">
-                    <span class="badge-titulo">Sistemas de RR.HH.</span>
-                    <span class="badge"><i class="fas fa-users ic-hr"></i> BUK</span>
-                    <span class="badge"><i class="fas fa-clock ic-time"></i> GeoVictoria</span>
-                    <span class="badge"><i class="fas fa-clock ic-time"></i> Kronos</span>
-                    <span class="badge"><i class="fas fa-calculator ic-pay"></i> Payroll</span>
-                    <span class="badge"><i class="fas fa-notes-medical ic-salud"></i> PIEE · FONASA</span>
-                    <span class="badge"><i class="fas fa-building ic-sap"></i> SAP</span>
+                <div class="badge-grupo fila-edu">
+                    <button type="button" class="badge-titulo" data-titulo="Estudios + Certificados" data-divs="est:Estudios|cert:Certificados" aria-live="polite" title="Clic para ver por categoría">Estudios + Certificados</button>
+                    <div class="cinta">
+                        <div class="pista">
+                            <div class="serie"><span class="badge" data-div="est" data-sub="Liceo G. González Heinrich" data-detalle="2002 – 2004"><i class="fas fa-microchip ic-edu"></i> Liceo técnico · Electrónica</span> <span class="badge" data-div="est" data-sub="Técnico nivel superior" data-detalle="2024 – 2025"><i class="fas fa-laptop-code ic-edu"></i> CFT Estatal · Programación</span> <span class="badge" data-div="est" data-sub="Universidad Federico Santa María" data-detalle="2026 · en curso"><i class="fas fa-graduation-cap ic-edu"></i> USM · Ing. Ejecución en Software</span> <span class="badge" data-div="cert" data-sub="Curso" data-detalle="Certificado"><i class="fas fa-scale-balanced ic-edu"></i> Legislación laboral vigente</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -123,173 +115,211 @@
                 <p class="seccion-subtitulo">De operario a automatización: 20 años, 5 organizaciones y una sola dirección.</p>
             </div>
 
-            <div class="acordeon">
-
-                <!-- MINEDUC -->
-                <div class="acordeon-item etapa-4">
-                    <button class="acordeon-header" type="button" aria-expanded="false">
-                        <span class="acordeon-anios actual" aria-label="2026 a Hoy"><span class="anio-fin">Hoy</span><span class="anio-ini">2026</span></span>
-                        <span class="acordeon-info">
-                            <span class="acordeon-top"><span class="etapa-chip">Datos y automatización</span></span>
-                            <span class="acordeon-titulo">MINEDUC · Dirección de Educación Pública</span>
-                            <span class="acordeon-empresa">Desarrollador de Automatización y Datos · Sector público · Remoto</span>
-                        </span>
-                        <span class="acordeon-icono"><i class="fas fa-chevron-down"></i></span>
-                    </button>
-                    <div class="acordeon-contenido">
-                        <div class="acordeon-texto">
-                            <div class="cargo">
-                                <div class="cargo-head"><h3>Desarrollador de Automatización y Datos para la Gestión y Desarrollo de Personas</h3><span class="cargo-fecha">2026 – hoy</span></div>
-                                <p class="cargo-contexto">Departamento de Gestión y Desarrollo de las Personas, al servicio de los Servicios Locales de Educación Pública (SLEP) de todo Chile.</p>
-                                <ul>
-                                    <li><b>Robot de software</b> que automatiza de punta a punta la tramitación de licencias médicas en el portal PIEE de FONASA, combinando APIs y servicios web, siempre dentro de lo que permite el marco legal.</li>
-                                    <li><b>Sistema web de gestión de personas:</b> de aplicación de escritorio a sistema web institucional, desde el levantamiento de requerimientos hasta la implementación.</li>
-                                    <li><b>Pipelines ETL</b> que consolidan datos de personas de múltiples sistemas a nivel nacional.</li>
-                                    <li><b>Dashboards en Power BI</b> que reemplazan reportes manuales en Excel.</li>
-                                    <li><b>Biblioteca normativa</b> de licencias médicas: 100 normas con búsqueda y filtros.</li>
-                                </ul>
-                                <div class="cargo-stack"><span>Python</span><span>SQL Server</span><span>MySQL</span><span>Angular</span><span>Node.js</span><span>APIs</span><span>RPA</span><span>Power BI</span></div>
+            <div class="exp-lista">
+                <div class="exp-ventana">
+                    <ol class="exp-pista" aria-label="Mis 11 cargos, del más reciente al primero">
+                    <li class="exp-cargo etapa-4 actual">
+                        <button type="button" class="exp-cargo-head" aria-expanded="false">
+                            <span class="acordeon-anios actual" aria-label="2026 a Hoy"><span class="anio-fin">Hoy</span><span class="anio-ini">2026</span></span>
+                            <span class="exp-cargo-info">
+                                <span class="exp-cargo-titulo">Desarrollador de Automatización y Datos <span class="etapa-chip">Datos y automatización</span></span>
+                                <span class="exp-cargo-empresa">MINEDUC · Dirección de Educación Pública</span>
+                            </span>
+                            <span class="exp-cargo-icono" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="exp-relato"><div>
+                            <p>En 2026 llegué a la Dirección de Educación Pública del MINEDUC para automatizar la gestión de personas de los Servicios Locales de Educación Pública de todo Chile, siempre dentro del marco legal. El siguiente capítulo ya empezó: la IA aplicada a la gestión de personas, rumbo a Ingeniero de IA.</p>
+                            <button type="button" class="exp-mas"><i class="fas fa-up-right-from-square"></i> Descripción del cargo y mi aporte</button>
+                            <div class="exp-detalle" hidden>
+                                <h4>Descripción del cargo</h4><ul><li>Desarrollo de automatizaciones, aplicaciones web y pipelines de datos.</li><li>Limpieza, validación e integración de datos de personas a nivel nacional.</li><li>Dashboards, documentación técnica y atención de requerimientos de los SLEP.</li></ul>
+                                <h4>Mi aporte</h4><ul class="aporte"><li><strong>Robot de licencias médicas:</strong> automatización de punta a punta de su tramitación en el portal PIEE de FONASA, con RPA asistido, APIs y servicios web, operando solo en lo que el marco legal permite.</li><li><strong>Sistema web de gestión de personas:</strong> de aplicación de escritorio a sistema web institucional (Angular + Node.js + MySQL), con levantamiento de requerimientos, reglas de validación, dashboards, pruebas e implementación.</li><li>Aplicaciones y dashboards que reemplazan reportes manuales en Excel por soluciones trazables.</li><li><strong>En curso:</strong> integración de IA local en Gestión y Desarrollo de Personas y nuevas automatizaciones para los SLEP.</li></ul>
                             </div>
-                        </div>
-                    </div>
+                        </div></div>
+                    </li>
+                    <li class="exp-cargo etapa-3">
+                        <button type="button" class="exp-cargo-head" aria-expanded="false">
+                            <span class="acordeon-anios" aria-label="2024 a 2025"><span class="anio-fin">2025</span><span class="anio-ini">2024</span></span>
+                            <span class="exp-cargo-info">
+                                <span class="exp-cargo-titulo">Analista de Datos para RR.HH. <span class="etapa-chip">Gestión y especialización</span></span>
+                                <span class="exp-cargo-empresa">Empresas La Polar</span>
+                            </span>
+                            <span class="exp-cargo-icono" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="exp-relato"><div>
+                            <p>Después el análisis de datos pasó a ser mi función principal. Integré la información de personas en indicadores y reportes para la gerencia, y cerré mi etapa en el retail ya especializado en datos.</p>
+                            <button type="button" class="exp-mas"><i class="fas fa-up-right-from-square"></i> Descripción del cargo y mi aporte</button>
+                            <div class="exp-detalle" hidden>
+                                <h4>Descripción del cargo</h4><ul><li>Extracción y cruce de datos de los sistemas de RR.HH.</li><li>Dashboards de dotación, asistencia, ausentismo y rotación.</li><li>Procesos ETL y reportes ejecutivos para gerencias.</li></ul>
+                                <h4>Mi aporte</h4><ul class="aporte"><li>Continué la evolución del Power BI que nació en la tienda; aquí el análisis de datos pasó a ser mi función principal.</li><li>Integración y análisis de información de BUK y GeoVictoria para indicadores y reportes ejecutivos.</li><li>Limpieza, validación, transformación e integración de datos.</li></ul>
+                            </div>
+                        </div></div>
+                    </li>
+                    <li class="exp-cargo etapa-3">
+                        <button type="button" class="exp-cargo-head" aria-expanded="false">
+                            <span class="acordeon-anios" aria-label="2022 a 2023"><span class="anio-fin">2023</span><span class="anio-ini">2022</span></span>
+                            <span class="exp-cargo-info">
+                                <span class="exp-cargo-titulo">Analista de Compensaciones y Datos <span class="etapa-chip">Gestión y especialización</span></span>
+                                <span class="exp-cargo-empresa">Empresas La Polar</span>
+                            </span>
+                            <span class="exp-cargo-icono" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="exp-relato"><div>
+                            <p>Ese dashboard llamó la atención de las jefaturas de Compensaciones y de Análisis de Datos, que me pidieron sumarme a su equipo. No postulé: me buscaron por un resultado. Ahí lo hice crecer, de herramienta de tienda a herramienta del área central.</p>
+                            <button type="button" class="exp-mas"><i class="fas fa-up-right-from-square"></i> Descripción del cargo y mi aporte</button>
+                            <div class="exp-detalle" hidden>
+                                <h4>Descripción del cargo</h4><ul><li>Bandas salariales, escalas de cargos y análisis de encuestas de mercado.</li><li>Cálculo y control de incentivos variables (comisiones, bonos por meta).</li><li>Indicadores de equidad, dispersión, masa salarial y costo laboral.</li></ul>
+                                <h4>Mi aporte</h4><ul class="aporte"><li>Llegué invitado por las jefaturas de Compensaciones y de Análisis de Datos, gracias al dashboard que creé como coordinador.</li><li>Potencié el dashboard y lo volví más completo: de herramienta de tienda a herramienta del área central.</li></ul>
+                            </div>
+                        </div></div>
+                    </li>
+                    <li class="exp-cargo etapa-3">
+                        <button type="button" class="exp-cargo-head" aria-expanded="false">
+                            <span class="acordeon-anios" aria-label="2020 a 2021"><span class="anio-fin">2021</span><span class="anio-ini">2020</span></span>
+                            <span class="exp-cargo-info">
+                                <span class="exp-cargo-titulo">Coordinador de RR.HH. <span class="etapa-chip">Gestión y especialización</span></span>
+                                <span class="exp-cargo-empresa">Empresas La Polar</span>
+                            </span>
+                            <span class="exp-cargo-icono" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="exp-relato"><div>
+                            <p>En La Polar asumí la coordinación de RR.HH. de tienda en plena pandemia. Construí un dashboard en Power BI que la tienda nunca había tenido: el gerente lo pidió para él, se convirtió en la herramienta de gestión de los jefes de sala y lo repliqué en otras sucursales.</p>
+                            <button type="button" class="exp-mas"><i class="fas fa-up-right-from-square"></i> Descripción del cargo y mi aporte</button>
+                            <div class="exp-detalle" hidden>
+                                <h4>Descripción del cargo</h4><ul><li>Atención de los trabajadores en todas las dimensiones de RR.HH.</li><li>Control de asistencia (GeoVictoria), licencias, vacaciones y permisos.</li><li>Reclutamiento, contratos, apoyo a remuneraciones, finiquitos y reportes para la gerencia.</li></ul>
+                                <h4>Mi aporte</h4><ul class="aporte"><li>Coordinación integral de RR.HH. en tienda: dotación, contratación, asistencia y remuneraciones, con BUK y GeoVictoria.</li><li><strong>Dashboard en Power BI</strong> con los KPIs de dotación, asistencia y gestión de personal, un proyecto que no se había logrado antes.</li><li>El gerente de tienda lo pidió para él y juntos lo convirtieron en el instrumento de gestión de los jefes de sala.</li><li>Asumí varias tiendas sin coordinador y repliqué el dashboard en ellas.</li></ul>
+                            </div>
+                        </div></div>
+                    </li>
+                    <li class="exp-cargo etapa-2">
+                        <button type="button" class="exp-cargo-head" aria-expanded="false">
+                            <span class="acordeon-anios" aria-label="2018 a 2019"><span class="anio-fin">2019</span><span class="anio-ini">2018</span></span>
+                            <span class="exp-cargo-info">
+                                <span class="exp-cargo-titulo">Administrativo de Remuneraciones <span class="etapa-chip">Administrativa</span></span>
+                                <span class="exp-cargo-empresa">Hites</span>
+                            </span>
+                            <span class="exp-cargo-icono" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="exp-relato"><div>
+                            <p>Llegué al dato más delicado de RR.HH.: el sueldo. Procesando la nómina con Payroll y Kronos construí mi primera automatización, una calculadora de finiquitos en Excel con macros VBA.</p>
+                            <button type="button" class="exp-mas"><i class="fas fa-up-right-from-square"></i> Descripción del cargo y mi aporte</button>
+                            <div class="exp-detalle" hidden>
+                                <h4>Descripción del cargo</h4><ul><li>Ingreso y validación de novedades: altas, bajas, licencias, permisos y vacaciones.</li><li>Cálculo de haberes, descuentos legales e impuesto; proceso de nómina y liquidaciones.</li><li>Declaración previsional, cuadratura con contabilidad y cálculo de finiquitos.</li></ul>
+                                <h4>Mi aporte</h4><ul class="aporte"><li>Proceso de nómina mensual con Payroll y control de asistencia con Kronos.</li><li><strong>Calculadora de finiquitos automatizada:</strong> datos extraídos del ERP a Excel y macros en VBA, con todas las variables de la empresa (años de servicio, mes de aviso, promedio de las últimas tres liquidaciones con ajuste a 30 días).</li><li>Permitió a gerencia y jefaturas estimar rápido el costo de una desvinculación.</li></ul>
+                            </div>
+                        </div></div>
+                    </li>
+                    <li class="exp-cargo etapa-2">
+                        <button type="button" class="exp-cargo-head" aria-expanded="false">
+                            <span class="acordeon-anios" aria-label="2016 a 2017"><span class="anio-fin">2017</span><span class="anio-ini">2016</span></span>
+                            <span class="exp-cargo-info">
+                                <span class="exp-cargo-titulo">Administrativo de Personas <span class="etapa-chip">Administrativa</span></span>
+                                <span class="exp-cargo-empresa">Hites</span>
+                            </span>
+                            <span class="exp-cargo-icono" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="exp-relato"><div>
+                            <p>Después administré la vida laboral completa de los trabajadores: contratos, anexos, licencias médicas y finiquitos. Ahí conocí por dentro las licencias médicas, el mismo proceso que hoy automatizo a nivel nacional.</p>
+                            <button type="button" class="exp-mas"><i class="fas fa-up-right-from-square"></i> Descripción del cargo y mi aporte</button>
+                            <div class="exp-detalle" hidden>
+                                <h4>Descripción del cargo</h4><ul><li>Confección y control de contratos y anexos.</li><li>Registro y tramitación de licencias médicas, vacaciones y permisos.</li><li>Envío de novedades a remuneraciones y control de contratos por vencer.</li></ul>
+                                <h4>Mi aporte</h4><ul class="aporte"><li>Administración y control de contratos, anexos y documentación laboral.</li><li>Apoyo en cálculo de remuneraciones, finiquitos y licencias médicas.</li><li>Consolidación y validación de información de colaboradores en Excel.</li><li>Organización y digitalización de archivos, hacia procesos más estructurados.</li></ul>
+                            </div>
+                        </div></div>
+                    </li>
+                    <li class="exp-cargo etapa-2">
+                        <button type="button" class="exp-cargo-head" aria-expanded="false">
+                            <span class="acordeon-anios" aria-label="2014 a 2015"><span class="anio-fin">2015</span><span class="anio-ini">2014</span></span>
+                            <span class="exp-cargo-info">
+                                <span class="exp-cargo-titulo">Asistente de Reclutamiento y Selección <span class="etapa-chip">Administrativa</span></span>
+                                <span class="exp-cargo-empresa">Hites</span>
+                            </span>
+                            <span class="exp-cargo-icono" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="exp-relato"><div>
+                            <p>En Hites, un retail nacional, conocí la escala. La selección de personal para tiendas era masiva y continua, y ahí trabajé por primera vez con grandes bases de datos de personas y mis primeros indicadores.</p>
+                            <button type="button" class="exp-mas"><i class="fas fa-up-right-from-square"></i> Descripción del cargo y mi aporte</button>
+                            <div class="exp-detalle" hidden>
+                                <h4>Descripción del cargo</h4><ul><li>Publicación de avisos y filtro curricular masivo.</li><li>Coordinación de entrevistas y seguimiento de postulantes.</li><li>Reportes de indicadores: tiempo de contratación y cobertura de vacantes.</li></ul>
+                                <h4>Mi aporte</h4><ul class="aporte"><li>Publicación de ofertas laborales y filtro curricular masivo.</li><li>Coordinación de entrevistas y seguimiento telefónico de postulantes.</li><li>Gestión y actualización de bases de datos de candidatos en Excel.</li><li>Reportería de indicadores de reclutamiento (tiempo de contratación, tasa de cobertura).</li></ul>
+                            </div>
+                        </div></div>
+                    </li>
+                    <li class="exp-cargo etapa-2">
+                        <button type="button" class="exp-cargo-head" aria-expanded="false">
+                            <span class="acordeon-anios" aria-label="2012 a 2013"><span class="anio-fin">2013</span><span class="anio-ini">2012</span></span>
+                            <span class="exp-cargo-info">
+                                <span class="exp-cargo-titulo">Asistente de RR.HH. <span class="etapa-chip">Administrativa</span></span>
+                                <span class="exp-cargo-empresa">Iberoamericana Radio Chile · Punta Arenas</span>
+                            </span>
+                            <span class="exp-cargo-icono" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="exp-relato"><div>
+                            <p>En la misma radio di el paso que cambió mi rumbo: Recursos Humanos. Conocía por dentro a cada equipo técnico de la zona austral, y eso me permitió traducir su realidad para RR.HH. central.</p>
+                            <button type="button" class="exp-mas"><i class="fas fa-up-right-from-square"></i> Descripción del cargo y mi aporte</button>
+                            <div class="exp-detalle" hidden>
+                                <h4>Descripción del cargo</h4><ul><li>Control de asistencia, permisos, licencias y vacaciones.</li><li>Documentación de personal: contratos, anexos y certificados.</li><li>Apoyo en contrataciones y envío de novedades a remuneraciones.</li></ul>
+                                <h4>Mi aporte</h4><ul class="aporte"><li>Apoyo a RR.HH. central con el personal técnico de audio y operaciones de la zona austral, incluida su documentación.</li><li>Puente entre los equipos técnicos y RR.HH.: conocía sus turnos, eventos y necesidades desde adentro.</li><li>Control de asistencia, permisos, licencias y vacaciones; documentación de personal.</li></ul>
+                            </div>
+                        </div></div>
+                    </li>
+                    <li class="exp-cargo etapa-1">
+                        <button type="button" class="exp-cargo-head" aria-expanded="false">
+                            <span class="acordeon-anios" aria-label="2010 a 2011"><span class="anio-fin">2011</span><span class="anio-ini">2010</span></span>
+                            <span class="exp-cargo-info">
+                                <span class="exp-cargo-titulo">Asistente de Audio <span class="etapa-chip">Operativa y técnica</span></span>
+                                <span class="exp-cargo-empresa">Iberoamericana Radio Chile · Punta Arenas</span>
+                            </span>
+                            <span class="exp-cargo-icono" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="exp-relato"><div>
+                            <p>Luego la historia siguió en el sur. En Punta Arenas, en Iberoamericana Radio Chile, operé el audio del estudio y de los eventos en vivo. Ahí aprendí a sostener sistemas que no pueden fallar mientras están al aire.</p>
+                            <button type="button" class="exp-mas"><i class="fas fa-up-right-from-square"></i> Descripción del cargo y mi aporte</button>
+                            <div class="exp-detalle" hidden>
+                                <h4>Descripción del cargo</h4><ul><li>Operación técnica de programas en vivo y grabados.</li><li>Montaje, operación y desmontaje de sonido para eventos musicales y producciones.</li><li>Apoyo en producciones audiovisuales y mantención básica de equipos.</li></ul>
+                                <h4>Mi aporte</h4><ul class="aporte"><li>Labores de estudio en la sede regional.</li><li>Sonido para eventos musicales y todo tipo de eventos.</li><li>Producciones de sonido y medios audiovisuales.</li></ul>
+                            </div>
+                        </div></div>
+                    </li>
+                    <li class="exp-cargo etapa-1">
+                        <button type="button" class="exp-cargo-head" aria-expanded="false">
+                            <span class="acordeon-anios" aria-label="2008 a 2009"><span class="anio-fin">2009</span><span class="anio-ini">2008</span></span>
+                            <span class="exp-cargo-info">
+                                <span class="exp-cargo-titulo">Operario Ensamblador de Hardware <span class="etapa-chip">Operativa y técnica</span></span>
+                                <span class="exp-cargo-empresa">Computación Olidata</span>
+                            </span>
+                            <span class="exp-cargo-icono" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="exp-relato"><div>
+                            <p>De la bodega pasé a la línea de ensamblaje. Armaba, configuraba y probaba computadores con mis manos. Años después seguiría construyendo tecnología, pero con código.</p>
+                            <button type="button" class="exp-mas"><i class="fas fa-up-right-from-square"></i> Descripción del cargo y mi aporte</button>
+                            <div class="exp-detalle" hidden>
+                                <h4>Descripción del cargo</h4><ul><li>Montaje de placa madre, procesador, memoria, almacenamiento y fuente.</li><li>Instalación de sistema operativo y software, y pruebas de encendido y calidad.</li><li>Diagnóstico de equipos con fallas antes del despacho.</li></ul>
+                                <h4>Mi aporte</h4><ul class="aporte"><li>Armado de equipos computacionales.</li><li>Instalación de sistema operativo y software.</li><li>Pruebas y diagnóstico de fallas.</li></ul>
+                            </div>
+                        </div></div>
+                    </li>
+                    <li class="exp-cargo etapa-1">
+                        <button type="button" class="exp-cargo-head" aria-expanded="false">
+                            <span class="acordeon-anios" aria-label="2006 a 2007"><span class="anio-fin">2007</span><span class="anio-ini">2006</span></span>
+                            <span class="exp-cargo-info">
+                                <span class="exp-cargo-titulo">Operario de Bodega Electrónica <span class="etapa-chip">Operativa y técnica</span></span>
+                                <span class="exp-cargo-empresa">Computación Olidata</span>
+                            </span>
+                            <span class="exp-cargo-icono" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="exp-relato"><div>
+                            <p>Todo empezó en 2006, en la bodega de Olidata, el fabricante chileno de computadores. Recibía, registraba y despachaba componentes, y ahí aprendí la primera regla de los datos: un inventario es un registro que tiene que cuadrar.</p>
+                            <button type="button" class="exp-mas"><i class="fas fa-up-right-from-square"></i> Descripción del cargo y mi aporte</button>
+                            <div class="exp-detalle" hidden>
+                                <h4>Descripción del cargo</h4><ul><li>Recepción de mercadería contra guía o factura, revisión de cantidades y estado.</li><li>Etiquetado, ubicación y preparación de pedidos para la línea de ensamblaje y para despacho.</li><li>Registro de entradas y salidas, e inventarios periódicos.</li></ul>
+                                <h4>Mi aporte</h4><ul class="aporte"><li>Recepción, almacenamiento y clasificación de productos computacionales.</li><li>Manejo de inventarios, preparación de pedidos y orden de bodega.</li><li>Coordinación con la sala de ventas para la reposición interna.</li></ul>
+                            </div>
+                        </div></div>
+                    </li>
+                    </ol>
                 </div>
-
-                <!-- LA POLAR -->
-                <div class="acordeon-item etapa-3">
-                    <button class="acordeon-header" type="button" aria-expanded="false">
-                        <span class="acordeon-anios" aria-label="2020 a 2025"><span class="anio-fin">2025</span><span class="anio-ini">2020</span></span>
-                        <span class="acordeon-info">
-                            <span class="acordeon-top"><span class="etapa-chip">Gestión y especialización</span></span>
-                            <span class="acordeon-titulo">Empresas La Polar</span>
-                            <span class="acordeon-empresa">Coordinador de RR.HH. → Analista de Datos · Retail nacional · 3 cargos</span>
-                        </span>
-                        <span class="acordeon-icono"><i class="fas fa-chevron-down"></i></span>
-                    </button>
-                    <div class="acordeon-contenido">
-                        <div class="acordeon-texto">
-                            <div class="cargo">
-                                <div class="cargo-head"><h3>Analista de Datos para RR.HH.</h3><span class="cargo-fecha">2024 – 2025</span></div>
-                                <ul>
-                                    <li>Integré los datos de BUK, GeoVictoria y remuneraciones en dashboards de dotación, asistencia, ausentismo y rotación.</li>
-                                    <li>Procesos ETL de limpieza, validación y transformación para reportería ejecutiva, y automatización de reportes con Power Query.</li>
-                                </ul>
-                                <div class="cargo-stack"><span>Power BI</span><span>Power Query</span><span>SQL</span><span>BUK</span><span>GeoVictoria</span></div>
-                            </div>
-                            <div class="cargo">
-                                <div class="cargo-head"><h3>Analista de Compensaciones y Datos</h3><span class="cargo-fecha">2022 – 2023</span></div>
-                                <ul>
-                                    <li><b>Me invitaron al equipo</b> las jefaturas de Compensaciones y Análisis de Datos, después de ver el dashboard que construí como coordinador.</li>
-                                    <li>Potencié ese dashboard en Power BI hasta convertirlo en una herramienta para el área central, y analicé remuneraciones y costo laboral con datos de nómina.</li>
-                                </ul>
-                                <div class="cargo-stack"><span>Power BI</span><span>Excel avanzado</span><span>SQL</span></div>
-                            </div>
-                            <div class="cargo">
-                                <div class="cargo-head"><h3>Coordinador de RR.HH.</h3><span class="cargo-fecha">2020 – 2021</span></div>
-                                <ul>
-                                    <li>Coordinación integral de RR.HH. en tienda: atendí a todos los trabajadores en todas las dimensiones de la gestión de personas.</li>
-                                    <li>Diseñé en Power BI el dashboard de dotación y asistencia que la tienda nunca había tenido, y lo repliqué en otras sucursales al asumir su coordinación.</li>
-                                </ul>
-                                <div class="cargo-stack"><span>BUK</span><span>GeoVictoria</span><span>Power BI</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- HITES -->
-                <div class="acordeon-item etapa-2">
-                    <button class="acordeon-header" type="button" aria-expanded="false">
-                        <span class="acordeon-anios" aria-label="2014 a 2019"><span class="anio-fin">2019</span><span class="anio-ini">2014</span></span>
-                        <span class="acordeon-info">
-                            <span class="acordeon-top"><span class="etapa-chip">Administrativa</span></span>
-                            <span class="acordeon-titulo">Hites</span>
-                            <span class="acordeon-empresa">Reclutamiento → Remuneraciones · Retail nacional · 3 cargos</span>
-                        </span>
-                        <span class="acordeon-icono"><i class="fas fa-chevron-down"></i></span>
-                    </button>
-                    <div class="acordeon-contenido">
-                        <div class="acordeon-texto">
-                            <div class="cargo">
-                                <div class="cargo-head"><h3>Administrativo de Remuneraciones</h3><span class="cargo-fecha">2018 – 2019</span></div>
-                                <ul>
-                                    <li>Proceso de nómina mensual con Payroll y control de asistencia con Kronos.</li>
-                                    <li><b>Mi primera automatización:</b> una calculadora de finiquitos en Excel que convirtió un cálculo manual en una estimación inmediata para gerencia.</li>
-                                </ul>
-                                <div class="cargo-stack"><span>Payroll</span><span>Kronos</span><span>Excel avanzado</span></div>
-                            </div>
-                            <div class="cargo">
-                                <div class="cargo-head"><h3>Administrativo de Personas</h3><span class="cargo-fecha">2016 – 2017</span></div>
-                                <ul>
-                                    <li>Contratos, anexos, licencias médicas y apoyo en remuneraciones y finiquitos.</li>
-                                    <li>Validación de datos de colaboradores y digitalización de archivos.</li>
-                                </ul>
-                            </div>
-                            <div class="cargo">
-                                <div class="cargo-head"><h3>Asistente de Reclutamiento y Selección</h3><span class="cargo-fecha">2014 – 2015</span></div>
-                                <ul>
-                                    <li>Selección masiva para tiendas y gestión de bases de datos de candidatos.</li>
-                                    <li>Mis primeros indicadores: tiempo de contratación y cobertura de vacantes.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- IBEROAMERICANA RADIO -->
-                <div class="acordeon-item etapa-1">
-                    <button class="acordeon-header" type="button" aria-expanded="false">
-                        <span class="acordeon-anios" aria-label="2010 a 2013"><span class="anio-fin">2013</span><span class="anio-ini">2010</span></span>
-                        <span class="acordeon-info">
-                            <span class="acordeon-top"><span class="etapa-chip">Técnica → Administrativa</span></span>
-                            <span class="acordeon-titulo">Iberoamericana Radio Chile · Punta Arenas</span>
-                            <span class="acordeon-empresa">Asistente de Audio → Asistente de RR.HH. · Medios · 2 cargos</span>
-                        </span>
-                        <span class="acordeon-icono"><i class="fas fa-chevron-down"></i></span>
-                    </button>
-                    <div class="acordeon-contenido">
-                        <div class="acordeon-texto">
-                            <div class="cargo">
-                                <div class="cargo-head"><h3>Asistente de RR.HH.</h3><span class="cargo-fecha">2012 – 2013</span></div>
-                                <ul>
-                                    <li>Apoyo a RR.HH. central para el personal técnico de audio y operaciones de la zona austral.</li>
-                                    <li><b>Mi ventaja:</b> venía del área técnica, así que podía traducir la realidad de esos equipos (turnos, eventos, necesidades) para RR.HH. central.</li>
-                                </ul>
-                            </div>
-                            <div class="cargo">
-                                <div class="cargo-head"><h3>Asistente de Audio</h3><span class="cargo-fecha">2010 – 2011</span></div>
-                                <ul>
-                                    <li>Operación de audio en estudio y en eventos musicales, producciones de sonido y medios audiovisuales.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- OLIDATA -->
-                <div class="acordeon-item etapa-1">
-                    <button class="acordeon-header" type="button" aria-expanded="false">
-                        <span class="acordeon-anios" aria-label="2006 a 2009"><span class="anio-fin">2009</span><span class="anio-ini">2006</span></span>
-                        <span class="acordeon-info">
-                            <span class="acordeon-top"><span class="etapa-chip">Operativa y técnica</span></span>
-                            <span class="acordeon-titulo">Computación Olidata</span>
-                            <span class="acordeon-empresa">Bodega → Ensamblaje de hardware · Tecnología · 2 cargos</span>
-                        </span>
-                        <span class="acordeon-icono"><i class="fas fa-chevron-down"></i></span>
-                    </button>
-                    <div class="acordeon-contenido">
-                        <div class="acordeon-texto">
-                            <div class="cargo">
-                                <div class="cargo-head"><h3>Operario Ensamblador de Hardware</h3><span class="cargo-fecha">2008 – 2009</span></div>
-                                <ul><li>Armado, configuración y pruebas de computadores. Aquí empecé a construir tecnología con las manos.</li></ul>
-                            </div>
-                            <div class="cargo">
-                                <div class="cargo-head"><h3>Operario de Bodega Electrónica</h3><span class="cargo-fecha">2006 – 2007</span></div>
-                                <ul><li>Recepción, almacenamiento e inventario de componentes computacionales.</li></ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
         </section>
 
         <!-- ========== SECCIÓN PROYECTOS ========== -->
